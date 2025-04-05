@@ -1,27 +1,28 @@
 <template>
-  <div style="height: 50vh; width: 50%">
-    <VueFlow
-      v-model:nodes="nodes"
-      v-model:edges="edges"
-      fit-view-on-init
-      class="vue-flow-basic-example"
-      :default-zoom="1"
-      :min-zoom="0.2"
-      :max-zoom="2"
-    >
-      <Background pattern-color="#aaa" :gap="8" />
-      <MiniMap />
-      <Controls />
-
-      <template #node-custom="nodeProps">
-        <CustomNode v-bind="nodeProps" />
-      </template>
-
-      <template #edge-custom="edgeProps">
-        <CustomEdge v-bind="edgeProps" />
-      </template>
-    </VueFlow>
-  </div>
+  <main class="container mx-auto">    
+    <div class="border" style="height: 500px; width: 100%; margin-top: 200px; background: #1a192b;">
+      <VueFlow
+        v-model:nodes="nodes"
+        v-model:edges="edges"
+        fit-view-on-init
+        :default-zoom="1"
+        :min-zoom="0.2"
+        :max-zoom="2"
+      >
+        <Background pattern-color="#aaa" :gap="10" />
+        <MiniMap />
+        <Controls />
+  
+        <template #node-custom="nodeProps">
+          <CustomNode v-bind="nodeProps" />
+        </template>
+  
+        <template #edge-custom="edgeProps">
+          <CustomEdge v-bind="edgeProps" />
+        </template>
+      </VueFlow>
+    </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
@@ -39,15 +40,19 @@ const { onConnect, addEdges } = useVueFlow()
 const nodes = ref<Node[]>(
   flowData.nodes.map(node => ({
     ...node,
-    type: 'custom'
+    type: 'custom',
+    data: {
+      label: node.label,
+      description: node.description,
+    },
   }))
 )
 
 const edges = ref<Edge[]>(
   flowData.edges.map(edge => ({
-    ...edge,
-    id: `e${edge.source}-${edge.target}`,
-    type: 'custom'
+    source: edge.from,
+    target: edge.to,
+    id: `e${edge.from}-${edge.to}`,
   }))
 )
 

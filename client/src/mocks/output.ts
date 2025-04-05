@@ -1,40 +1,103 @@
 export default {
-    "nodes": [
-      { "id": "1", "label": "Desenvolvimento de Aplicações Web Modernas", "position": { "x": 400, "y": 50 } },
-      { "id": "2", "label": "Arquitetura da Aplicação", "position": { "x": 100, "y": 150 }, "description": "Estruturas como monólito, microservices e serverless impactam escalabilidade e manutenção." },
-      { "id": "3", "label": "Front-End Moderno", "position": { "x": 400, "y": 150 }, "description": "Frameworks modernos e técnicas de otimização melhoram a experiência do usuário." },
-      { "id": "4", "label": "Back-End e APIs", "position": { "x": 700, "y": 150 }, "description": "Linguagens, frameworks e padrões de API impactam a eficiência do servidor." },
-      { "id": "5", "label": "Infraestrutura e DevOps", "position": { "x": 100, "y": 350 }, "description": "Ferramentas para deploy, escalabilidade e monitoramento são essenciais para estabilidade." },
-      { "id": "6", "label": "Segurança na Web", "position": { "x": 400, "y": 350 }, "description": "Proteção contra ataques, criptografia e autenticação garantem a segurança dos dados." },
-      { "id": "7", "label": "Tendências e Futuro", "position": { "x": 700, "y": 350 }, "description": "Novas tecnologias como Web3, IA e VR moldam o futuro do desenvolvimento web." },
-      
-      { "id": "8", "label": "Monólito vs. Microservices", "position": { "x": 50, "y": 250 }, "description": "Monólitos são simples, enquanto microservices permitem escalabilidade modular." },
-      { "id": "9", "label": "Serverless", "position": { "x": 150, "y": 250 }, "description": "Executa código sob demanda, reduzindo custos de infraestrutura." },
-      { "id": "10", "label": "SPA", "position": { "x": 250, "y": 250 }, "description": "Aplicações de página única melhoram a experiência do usuário." },
-      { "id": "11", "label": "SSR vs. CSR", "position": { "x": 350, "y": 250 }, "description": "SSR melhora SEO e performance inicial, CSR é mais dinâmico." },
-      
-      { "id": "12", "label": "Frameworks e Bibliotecas", "position": { "x": 350, "y": 250 }, "description": "React, Vue, Svelte e Solid oferecem diferentes abordagens de desenvolvimento." },
-      { "id": "13", "label": "Componentização", "position": { "x": 450, "y": 250 }, "description": "Uso de componentes reutilizáveis melhora a organização e manutenção." },
-      { "id": "14", "label": "Gerenciamento de Estado", "position": { "x": 550, "y": 250 }, "description": "Pinia, Vuex e Redux ajudam a manter dados sincronizados." },
-      { "id": "15", "label": "Otimização de Performance", "position": { "x": 650, "y": 250 }, "description": "Lazy Loading, Code Splitting e Server Components melhoram a eficiência." },
-      
-      { "id": "16", "label": "Linguagens e Frameworks", "position": { "x": 650, "y": 250 }, "description": "Node.js, PHP, Python e Golang são populares para back-end." },
-      { "id": "17", "label": "APIs REST vs. GraphQL", "position": { "x": 750, "y": 250 }, "description": "REST é padronizado, GraphQL permite consultas flexíveis." },
-      { "id": "18", "label": "Autenticação e Segurança", "position": { "x": 850, "y": 250 }, "description": "JWT, OAuth 2.0 e proteção contra CSRF garantem segurança." },
-      { "id": "19", "label": "Banco de Dados", "position": { "x": 950, "y": 250 }, "description": "SQL e NoSQL são usados para diferentes necessidades." },
-      
-      { "id": "28", "label": "Edge Computing", "position": { "x": 650, "y": 450 }, "description": "Processamento mais próximo do usuário reduz latência." },
-      { "id": "29", "label": "Web3 e Blockchain", "position": { "x": 750, "y": 450 }, "description": "Descentralização de dados e contratos inteligentes." },
-      { "id": "30", "label": "AI e Automação", "position": { "x": 850, "y": 450 }, "description": "IA otimiza interfaces e automação de tarefas." },
-      { "id": "31", "label": "Realidade Aumentada e VR", "position": { "x": 950, "y": 450 }, "description": "Aplicações imersivas para e-commerce e entretenimento." }
-    ],
-    "edges": [
-      { "source": "1", "target": "2" },
-      { "source": "1", "target": "3" },
-      { "source": "1", "target": "4" },
-      { "source": "1", "target": "5" },
-      { "source": "1", "target": "6" },
-      { "source": "1", "target": "7" }
-    ]
-  }
-  
+  "nodes": [
+    {
+      "id": "1",
+      "label": "Uso Diário do Cursor",
+      "description": "O autor e outros engenheiros estão utilizando Cursor para escrever código, em vez de digitar manualmente. A ferramenta agiliza o trabalho, especialmente em tarefas complexas, desde que você saiba o que está fazendo.",
+      "position": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "2",
+      "label": "Modo YOLO",
+      "description": "YOLO permite que o Cursor escreva e execute código até verificar que está correto. Comandos como testes, build e mkdir são liberados para execução automática. Ideal para corrigir erros rapidamente.",
+      "position": { "x": -300, "y": 200 }
+    },
+    {
+      "id": "3",
+      "label": "Tarefas Complexas",
+      "description": "Para funções mais difíceis, o ideal é adicionar testes automáticos no prompt. Cursor cria testes, implementa o código e o corrige até passar nos testes.",
+      "position": { "x": 300, "y": 200 }
+    },
+    {
+      "id": "4",
+      "label": "Testes e Iteração",
+      "description": "Com YOLO ativado, Cursor cria arquivos de teste, implementa o código e itera automaticamente até os testes passarem. Mas é preciso supervisionar o processo para evitar desvios.",
+      "position": { "x": 0, "y": 400 }
+    },
+    {
+      "id": "5",
+      "label": "Expandindo Testes",
+      "description": "Cursor pode ser usado para melhorar a robustez do código adicionando novos casos de teste com base em falhas reais encontradas nos logs.",
+      "position": { "x": -300, "y": 600 }
+    },
+    {
+      "id": "6",
+      "label": "Design com Cursor",
+      "description": "Cursor não é bom para validar visualmente designs. A recomendação é usar Figma com Builder.io para gerar código e iterar com Cursor.",
+      "position": { "x": 300, "y": 600 }
+    },
+    {
+      "id": "7",
+      "label": "Erros de TypeScript",
+      "description": "Você pode pedir para o Cursor rodar o build, identificar e corrigir os erros. Ideal para terminar uma tarefa com o comando de build final.",
+      "position": { "x": -300, "y": 800 }
+    },
+    {
+      "id": "8",
+      "label": "Depuração com Logs",
+      "description": "Adicione logs com ajuda do Cursor, execute o código, colete os logs e retorne com os dados para que o Cursor proponha correções mais precisas.",
+      "position": { "x": 300, "y": 800 }
+    },
+    {
+      "id": "9",
+      "label": "Atalhos Úteis",
+      "description": "Command K aplica mudanças rápidas no código selecionado. Command I abre o agente com contexto do trecho. Ambos aceleram a interação com o Cursor.",
+      "position": { "x": -300, "y": 1000 }
+    },
+    {
+      "id": "10",
+      "label": "Command K no Terminal",
+      "description": "Permite usar linguagem natural no terminal, como 'listar últimos 5 branches'. Poupa tempo com comandos complexos como os do Git.",
+      "position": { "x": 0, "y": 1200 }
+    },
+    {
+      "id": "11",
+      "label": "Autocomplete e Tab",
+      "description": "Usar tab corretamente no Cursor requer prática. Ele pode completar código ou navegar entre sugestões. A experiência melhora com o uso.",
+      "position": { "x": 300, "y": 1000 }
+    },
+    {
+      "id": "12",
+      "label": "Mensagens de Commit",
+      "description": "Cursor pode gerar mensagens de commit automaticamente na aba de controle de versão. É uma forma prática de manter histórico organizado.",
+      "position": { "x": -300, "y": 1400 }
+    },
+    {
+      "id": "13",
+      "label": "Bug Finder",
+      "description": "Comando acessado via Command Shift P. Compara alterações com a branch principal e tenta encontrar bugs automaticamente.",
+      "position": { "x": 0, "y": 1600 }
+    },
+    {
+      "id": "14",
+      "label": "Equilíbrio entre IA e Habilidade",
+      "description": "Usar IA não diminui sua habilidade se você continua entendendo e depurando código. A IA auxilia, mas conhecimento técnico continua essencial.",
+      "position": { "x": 300, "y": 1400 }
+    }
+  ],
+  "edges": [
+    { "from": "1", "to": "2" },
+    { "from": "1", "to": "3" },
+    { "from": "3", "to": "4" },
+    { "from": "4", "to": "5" },
+    { "from": "4", "to": "6" },
+    { "from": "4", "to": "7" },
+    { "from": "4", "to": "8" },
+    { "from": "1", "to": "9" },
+    { "from": "9", "to": "10" },
+    { "from": "9", "to": "11" },
+    { "from": "1", "to": "12" },
+    { "from": "12", "to": "13" },
+    { "from": "1", "to": "14" }
+  ]
+}
