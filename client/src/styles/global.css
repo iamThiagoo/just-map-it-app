@@ -2,5 +2,9 @@
 @import './fonts.css';
 
 body {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display', sans-serif !important;
+}
+
+.on-click {
+  @apply hover:opacity-95 transform duration-200 active:scale-95;
 }
