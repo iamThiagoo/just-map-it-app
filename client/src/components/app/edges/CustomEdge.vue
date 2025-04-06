@@ -16,21 +16,26 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-import type { EdgeProps } from '@vue-flow/core'
-import { BaseEdge, EdgeLabelRenderer, getBezierPath, useVueFlow } from '@vue-flow/core'
+import { computed } from 'vue';
+import type { EdgeProps } from '@vue-flow/core';
+import {
+  BaseEdge,
+  EdgeLabelRenderer,
+  getBezierPath,
+  useVueFlow,
+} from '@vue-flow/core';
 
-const props = defineProps<EdgeProps>()
+const props = defineProps<EdgeProps>();
 
-const { removeEdges } = useVueFlow()
+const { removeEdges } = useVueFlow();
 
-const path = computed(() => getBezierPath(props))
+const path = computed(() => getBezierPath(props));
 </script>
 
 <script lang="ts">
 export default {
   inheritAttrs: false,
-}
+};
 </script>
 
 <style lang="css" scoped>
@@ -40,6 +45,8 @@ export default {
 }
 
 .edgebutton:hover {
-  box-shadow: 0 0 0 2px pink, 0 0 0 4px #f05f75;
+  box-shadow:
+    0 0 0 2px pink,
+    0 0 0 4px #f05f75;
 }
 </style>
