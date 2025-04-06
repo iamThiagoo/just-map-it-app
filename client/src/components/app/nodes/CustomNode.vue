@@ -20,7 +20,6 @@
 <script lang="ts" setup>
 import { Handle } from '@vue-flow/core';
 import { reactive, ref } from 'vue';
-
 const props = defineProps<{
   data: {
     id: string;
@@ -31,14 +30,13 @@ const props = defineProps<{
 
 const inputTitle = ref(props.data.label || '');
 const inputDescription = ref(props.data.description || '');
-
 const state = reactive({
   isTitleEditing: false,
   isDescriptionEditing: false,
 });
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .custom-node {
   height: 100%;
   width: 100%;

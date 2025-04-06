@@ -1,6 +1,5 @@
 <template>
   <BaseEdge :path="path[0]" />
-
   <EdgeLabelRenderer>
     <div
       :style="{
@@ -26,9 +25,7 @@ import {
 } from '@vue-flow/core';
 
 const props = defineProps<EdgeProps>();
-
 const { removeEdges } = useVueFlow();
-
 const path = computed(() => getBezierPath(props));
 </script>
 
@@ -45,8 +42,6 @@ export default {
 }
 
 .edgebutton:hover {
-  box-shadow:
-    0 0 0 2px pink,
-    0 0 0 4px #f05f75;
+  box-shadow: 0 0 0 2px pink, 0 0 0 4px #f05f75;
 }
 </style>
