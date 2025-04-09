@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js",
-    "dev": "tsx watch src/main.ts",
+    "dev": "tsx watch src/http/api.ts",
     "format": "prettier --write \"**/*.ts\"",
     "test": "vitest"
   },
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/iamThiagoo/just-map-it-app#readme",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.1",
     "@types/node": "^22.14.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
